@@ -39,7 +39,8 @@ testem.log
 /typings
 /backend
 /.angular
-/environments
+src/environments/
+nodemon.json
 
 # System files
 .DS_Store
