@@ -1,0 +1,34 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+.align-start {
+  align-self: flex-start;
+}
+
+form > * {
+  margin-bottom: 1em;
+}
+
+mat-spinner {
+  margin-inline: auto;
+}
+
+mat-card {
+  margin-top: 2.4rem;
+  padding: 1.2rem;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.image-preview {
+  width: 10rem;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  width: 100%;
+}
