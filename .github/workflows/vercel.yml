@@ -19,7 +19,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: angular-app
-          path: .
+          path: dist
   download-artifact:
     needs: build
     runs-on: ubuntu-latest
