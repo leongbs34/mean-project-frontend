@@ -23,6 +23,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://mean-three.vercel.app/
     env:
       OUTPUT_PATH: dist/mean
     steps:
