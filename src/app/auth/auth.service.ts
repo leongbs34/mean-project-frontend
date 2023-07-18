@@ -3,11 +3,10 @@ import { Injectable, OnInit } from '@angular/core';
 import { AuthData } from './auth-data.model';
 import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
-// import 'dotenv/config';
 import { environment } from 'src/environments/environment';
 
 const url = environment.apiUrl;
-// const url = process.env.apiUrl;
+// const url = process.env.API_URL;
 const urlPath = '/api/user';
 
 @Injectable({ providedIn: 'root' })

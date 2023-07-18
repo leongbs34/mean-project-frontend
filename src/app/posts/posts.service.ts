@@ -3,11 +3,10 @@ import { Post } from './post.model';
 import { Subject, map } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-// import 'dotenv/config';
 import { environment } from 'src/environments/environment';
 
 const url = environment.apiUrl;
-// const url = process.env.apiUrl;
+// const url = process.env.API_URL;
 const urlPath = '/api/posts';
 
 @Injectable({ providedIn: 'root' })

@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "generate:env": "node ./scripts/cicd.mjs",
+    "build": "npm run generate:env && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start:server": "nodemon ./backend/server.js"

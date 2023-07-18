@@ -13,6 +13,8 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
+        env:
+          API_URL: ${{ secrets.API_URL }}
   deploy:
     needs: build
     runs-on: ubuntu-latest
