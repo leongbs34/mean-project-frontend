@@ -1,6 +1,7 @@
-import { writeFile } from "fs";
+import { writeFile, mkdir } from "fs";
 
-const targetPath = "./src/environments/environment.prod.ts";
+const envPath = "./src/environments";
+const targetPath = `${envPath}/environment.prod.ts`;
 
 const envConfigFile = `
   export const environment = {
@@ -8,6 +9,10 @@ const envConfigFile = `
     apiUrl: ${process.env.API_URL},
   };
 `;
+
+mkdir(envPath, { recursive: true }, (err) => {
+  if (err) return console.log(err);
+});
 
 writeFile(targetPath, envConfigFile, "utf8", (err) => {
   if (err) {
