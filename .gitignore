@@ -39,7 +39,8 @@ testem.log
 /typings
 /backend
 /.angular
-src/environments/
+src/environments/*
+!src/environments/environment.ts
 nodemon.json
 
 # System files
