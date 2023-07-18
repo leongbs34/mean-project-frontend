@@ -1,6 +1,6 @@
 import { writeFile, mkdir } from "fs";
 
-const envPath = "./src/environments";
+const envPath = "src/environments";
 const targetPath = `${envPath}/environment.prod.ts`;
 
 const envConfigFile = `
